@@ -95,6 +95,7 @@ nav button{
     width: 20px;
     position: relative;
     top: 2px;
+    left: 10px;
 }
 .btn-trans-nav{
     background-color:transparent;
@@ -125,12 +126,13 @@ nav button{
 
 
 .input-email{
-    padding: 18px 160px 18px 20px;
-    background-color:transparent;
+    padding: 17px 3px 18px 20px;
+    background-color: transparent;
     appearance: none;
     border: 1px solid rgba(164, 164, 164,0.70);
     border-radius: 3px;
     color: white;
+    width: 433px;
     font-size: 15px;
     font-weight: 500;
 
@@ -145,7 +147,7 @@ nav button{
     color: rgb(255, 255, 255);
     padding:0.75rem 1.5rem;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -298,16 +300,99 @@ section.second .download_div> :nth-child(3){
     gap: 26px; 
 }
 
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
 
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 7px auto;
+    cursor: pointer;
+}
+
+.villen2{
+    position: relative;
+    margin: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.villen2> :nth-child(1){
+    font-size: 23px;
+    text-align: center;
+}
+
+.regi-btn2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer{
+    color: #ffffffb3;
+    max-width: 60vw;
+    margin: 71px 0px 100px 300px;
+}
+footer span{
+    margin: 53px 0px 20px 0px;
+    display: inline-block;
+}
+footer span> :nth-child(1){
+    color:#ffffffb3;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 90px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+.footer-item span{
+    margin: 10px 0px 20px 0px;
+    display: inline-block;
+    color:#ffffffb3;
+
+}
+.footer-item a{
+    text-decoration:underline;
+    text-decoration-thickness: 0;
+    text-decoration-style:solid ;
+    color:#ffffffb3;
+    font-weight: 300;
+}
 
 
 @media screen and (max-width:768px) {
-    body{
-        width: 100%;
-    }
-    .main{
-        width: 107vw;
-    }
+    body {
+        width: 121vw;
+    }    
     nav> span{
         width: 88px;
     }
