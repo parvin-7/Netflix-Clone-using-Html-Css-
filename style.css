@@ -7,6 +7,7 @@
 }
 body{
     background-color: #000;
+    width: 100%;
 }
 .main{
     background-image: url(assets/images/bg.jpg);
@@ -311,25 +312,48 @@ section.second .download_div> :nth-child(3){
     padding: 34px;
 }
 
-.faqbox:hover {
+.question:hover {
     background-color: #414141;
     color: white;
 }
 
-.faqbox svg {
+.question svg {
     filter: invert(1);
 }
 
-.faqbox {
-    transition: all 1s ease-out;
+.question {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
     background-color: #2d2d2d;
-    padding: 24px;
-    max-width: 60vw;
+    padding: 25px;
+    max-width: 72vw;
     margin: 7px auto;
     cursor: pointer;
+}
+.answer{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    max-width: 72vw;
+    margin: 7px auto;
+    line-height: 35px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+
+}
+
+.answer.active{
+    max-height: 200px;
+    padding: 25px 25px;
+}
+#icon{
+    transition: transform 0.2s;
+}
+#icon.active{
+    transform: rotate(45deg);
 }
 
 .villen2{
@@ -388,11 +412,15 @@ footer span> :nth-child(1){
     font-weight: 300;
 }
 
+@media screen and (max-width:300px){
+    
+}
+
 
 @media screen and (max-width:768px) {
-    body {
-        width: 121vw;
-    }    
+    body{
+        width: 129%;
+    }
     nav> span{
         width: 88px;
     }
@@ -510,5 +538,32 @@ footer span> :nth-child(1){
         line-height: 20px;
         margin: 0rem -63px 0;
         font-weight: 600;
+    }
+    .answer{
+        font-size: 19px;
+        line-height: 29px;
+    }
+    .answer.active{
+        max-height: 250px;
+    }
+    .villen2> :nth-child(1) {
+        font-size: 19px;
+    }
+    .villen2> .regi-btn2> :nth-child(2){
+        width: 323px;
+    }
+    .footer{
+        position: relative;
+        right: 144px;
+    }
+    footer span{
+        position: relative;
+        right: 144px;
+    }
+    .footer-item span{
+        position: relative;
+        left: 21px;
+        margin: 10px 0px 10px -32px;
+        display: inline-block;
     }
 }
