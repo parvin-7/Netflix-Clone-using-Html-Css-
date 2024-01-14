@@ -7,7 +7,8 @@
 }
 body{
     background-color: #000;
-    width: 100%;
+    /* width: 100%; */
+    margin: 0;
 }
 .main{
     background-image: url(assets/images/bg.jpg);
@@ -326,7 +327,7 @@ section.second .download_div> :nth-child(3){
     display: flex;
     justify-content: space-between;
     background-color: #2d2d2d;
-    padding: 25px;
+    padding: 15px;
     max-width: 72vw;
     margin: 7px auto;
     cursor: pointer;
@@ -338,7 +339,8 @@ section.second .download_div> :nth-child(3){
     background-color: #2d2d2d;
     max-width: 72vw;
     margin: 7px auto;
-    line-height: 35px;
+    line-height: 25px;
+    padding: 0px 15px 0px 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s;
@@ -346,8 +348,8 @@ section.second .download_div> :nth-child(3){
 }
 
 .answer.active{
-    max-height: 200px;
-    padding: 25px 25px;
+    max-height: 130px;
+    padding: 35px 15px;
 }
 #icon{
     transition: transform 0.2s;
@@ -412,14 +414,67 @@ footer span> :nth-child(1){
     font-weight: 300;
 }
 
-@media screen and (max-width:300px){
-    
-}
+/* @media screen and (max-width:300px){
+    body{
+        width: max-content;
+        margin: -20px;
+    }
+    .main{
+    width: max-content;
+    height: 1262px;
+    background-size: 137.5em;
+    }
+    .main .box{
+        height:100%;
+    }
+    nav{
+       
+        justify-content: space-around;
+       
+        position: relative;
+        gap: 272px;
+        margin: auto;
+        height: 400px;
+    }
+    nav> span> img{
+        width: 416px;
+    }
+
+    .btns{
+    margin: 0px 29px;
+    position: relative;
+    left: 58px;
+    gap: 26px;
+    }
+    .btn-red-nav{
+    width: 213px;
+    font-size: 49px;
+    }
+    .btn-trans-nav{
+    padding: 31px 12px;
+    width: 213px;
+    font-size: 0px;
+    }
+    .eng-svg1{
+        width: 70px;
+        height: 70px;
+    }
+    .eng-svg2{
+        width: 70px;
+        height: 70px;
+    }
+    .villen{
+    margin: 0px auto;
+    padding: 0px 27px;
+    line-height: 45px;
+    }
+} */
 
 
 @media screen and (max-width:768px) {
     body{
         width: 129%;
+    width: max-content;
     }
     nav> span{
         width: 88px;
